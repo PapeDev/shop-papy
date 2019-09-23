@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #e6e6e6;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #e6e6e6;
+    margin: 0;
+    line-height: 1.4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    padding: 0 15px;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbar {
+    width: 100%;
+    position: fixed;
+    background: #fcfcfc;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+    color: #000;
+    z-index: 1;
+}
+
+
+.header-logo {
+    display: block;
+    text-align: center;
+    *background: lightcoral;
+    *padding: 11px 0;
+    font-family: "Bauhaus 93";
+    font-size: 60px;
+    
+}
+.header-logo em {
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    top: 62px;
+    margin-left: 132px;
+    font-family: Gabriola, sans-serif
+}
+.header-search {
+    position: relative;
+    text-align: right;
+}
+.header-search i {
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 9px;
+}
+.header-search a {
+    padding-right: 20px;
+}
+
+.header-search input {
+    width: 315px;
+    height: 32px;
+    display: none;
+    border: 1px solid #b3b3b3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 40px 0 8px;
+    color: rgba(0, 0, 0, .4);   
+}
+.header-search input[type=text] {
+    color: rgba(0, 0, 0, .6);
+}
+
+.header-nav {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.header-nav a {
+    font-weight: bold;
+    color: #666666; 
+}
+.header-seconnecter {
+    padding-right: 20px;
+    border-right: 1px solid #e6e6e6;
+}
+.header-cart {
+    padding-left: 20px;
+}
+
+.header-seconnecter::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: center center / 18px 18px url(images/user.svg) no-repeat;
+    margin-top: -4px;
+    margin-right: 15px;
+}
+.header-cart::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    vertical-align: middle;
+    background: center center / 18px 17px url(images/cart.svg) no-repeat;
+    margin-top: -4px;
+    margin-right: 15px;
+}
+
+
+.site {
+    padding-top: 140px;
+    margin-bottom: 40px;
+}
+
+.main {
+}
+
+
+
+.category .category-title, .category .category-list {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+}
+.category .category-title {
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.category .category-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category .category-list a {
+    display: block;
+    width: 50%;
+    padding: 0.6em 0 0.6em 10px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    opacity: 0.67;
+    transition: .3s;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .13rem;
+
+}
+
+.category .category-list a:hover,
+.category .category-list a:active {
+    color: #000;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.slide {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.slide .fullwidth {
+    width: calc(100% + 0px);
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.clear {
+    clear: both;
+}
+.last-articles {
+    width: 100%;
+}
+.last-article-title {
+    background: #fff;
+    margin: 10px 0 10px 0;
+    padding: 7px 0 7px 10px;
+    color: #000;
+}
+.card {
+    margin-bottom: 10px;
+    background: #fff;
+    border: solid 1px #eee;
+    color: #000;
+}
+
+.card-header .fullwidth {
+    width: calc(100% - 0px);
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.card .card-body {
+    padding: 0 10px;
+    letter-spacing: 0.1em;
+}
+.card .card-title, 
+.card .price,
+.card .prc {
+    padding-bottom: 4px;
+}
+
+.card .card-body .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card .card-body .prc {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.card .card-title {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.footer {
+    color: #fff;
+    background: #4d4d4d;
+}
+.footer-bottom {
+    background: #333333;
+}
+.footer-title {
+    margin-bottom: 12px;
+    font-family: "Bauhaus 93", sans-serif;
+    font-size: 64px;
+    letter-spacing: .4;
+    
+}
+.footer-bottom-content {
+    display: flex;
+    justify-content: stretch;
+    
+    padding: 30px 15px;
+}
+.footer-bottom-content .social,
+.footer-bottom-content .contactez-nous,
+.footer-bottom-content .mode-paiement
+ {
+    width: 33.3%;
+    font-size: 12px;
+    text-transform: uppercase;
+    *text-align: center;
+}
+
+.footer-bottom-content .social h4,
+.footer-bottom-content .contactez-nous h4,
+.footer-bottom-content .mode-paiement h4
+ {
+    margin-bottom: 8px;
+}
+
+
+@media only screen and (min-width: 550px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+    }
+    .header-logo, .header-nav {
+        padding: 0;
+    }
+
+
+
+    .header-search input {
+        display: block;
+    }
+    .header-search i {
+        display: block;
+    }
+
+    .header-nav a {
+        *margin: 0 20px;
+    }
+
+    .site {
+        padding-top: 100px;
+    }
+
+
+    .site .last-articles {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .site .last-articles .card {
+        margin-left: 10px;
+    }
+
+    .site .last-articles .card-title {
+        width: 100%;
+    }
+    .site .last-articles .card:first-child {
+        margin-left: 0px;
+    }
+
+    .card {
+        width: 100%;
+    }
+    
+    .card .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        *white-space: nowrap;
+        
+    }
+    
+
+
+}
+
+
+
+@media only screen and (min-width: 1050px) {
+
+    .main {
+        display: inline-block;
+    }
+    .category {
+        float: left;
+        width: 210px;
+    }
+    
+    .category .category-list {
+        flex: none;
+        display: block;
+    }
+    .category .category-list a {
+        width: 100%;
+    }
+
+    .slide {
+        margin-left: 20px;
+        margin-bottom: 0;
+        width: calc(100% - 230px);
+        float: left;
+    }
+
+
+
+   
+   
+    
+    
+}
