@@ -30,9 +30,13 @@ a {
     width: 100%;
     position: fixed;
     background: #fcfcfc;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
     color: #000;
     z-index: 1;
+}
+
+.header {
+    *display: flex;
 }
 
 
@@ -188,12 +192,12 @@ a {
 }
 .last-article-title {
     background: #fff;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 25px 0;
     padding: 7px 0 7px 10px;
     color: #000;
 }
 .card {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background: #fff;
     border: solid 1px #eee;
     color: #000;
@@ -273,10 +277,13 @@ a {
 
     .header {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         padding: 0 25px;
     }
+    .header-txt-info {
+        margin-top: 32px;
+    }
+
     .header-logo, .header-nav {
         padding: 0;
     }
@@ -356,11 +363,105 @@ a {
         width: calc(100% - 230px);
         float: left;
     }
-
-
-
-   
    
     
+}
+
+.card-article-infos {
+    padding: 20px;
+    color: #6b6b6b;
+}
+
+.card-article, .card-article-infos {
+    margin: 20px 0;
+    background: #fff;
+}
+
+.card-article {
     
+    display: flex;
+}
+
+.card-article-img {
+    width: 570px;
+    height: 395px;
+}
+
+.card-article-body {
+    font-family: 'Open Sans';
+    margin: 15px;
+}
+
+.card-article-body h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.card-article-body p {
+    margin-bottom: 15px;
+    color: #6b6b6b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.card-article-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-article-price span{
+    text-transform: uppercase;
+    font-weight: normal;
+    
+}
+
+.card-article-command {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.card-article-command-button {
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    background: #333333;
+    font-size: 16px;
+    color: #e6e6e6;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card-article-command span {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.pas-de-contenu {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-article-infos-title h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-article-infos-description table{
+    width: 100%;
+}
+
+.card-article-infos-description table tr:nth-child(2n){
+    background: #e6e6e6;
+}
+
+.card-article-infos-description table td{
+    padding: 10px;
+}
+
+.td-title-b {
+    font-weight: 600;
 }
