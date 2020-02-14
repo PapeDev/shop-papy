@@ -20,6 +20,13 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.is_available {
+    color: rgb(31, 177, 31);
+}
+
+.is_unavailable {
+    color: rgb(226, 4, 4);
+}
 .container {
     box-sizing: border-box;
     width: calc(100% - 40px);
@@ -220,6 +227,9 @@ a {
 .card .prc {
     padding-bottom: 4px;
 }
+.card {
+    padding-bottom: 10px;
+}
 
 .card .card-body .price {
     font-size: 16px;
@@ -231,6 +241,7 @@ a {
 }
 
 .card .card-title {
+    margin-top: 15px;
     font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
