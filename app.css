@@ -7,7 +7,7 @@
 body, html {
     width: 100%;
     height: 100%;
-    background: #e6e6e6;
+    background: #ffffff;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #e6e6e6;
@@ -56,6 +56,7 @@ a {
     *padding: 11px 0;
     font-family: "Bauhaus 93";
     font-size: 60px;
+    cursor: pointer;
     
 }
 .header-logo em {
@@ -207,10 +208,17 @@ a {
 }
 .card {
     margin-bottom: 15px;
+    
     background: #fff;
-    border: solid 1px #eee;
     color: #000;
 }
+
+.card-header img{
+    border-bottom: solid 1px #c5c5c5;
+    border-top: solid 1px #c5c5c5;
+    border-radius: 15px;
+}
+
 
 .card-header .fullwidth {
     width: calc(100% - 0px);
@@ -218,9 +226,15 @@ a {
     margin-left: 0px;
     margin-right: 0px;
 }
+.card-header a {
+    cursor: zoom-in;
+}
 .card .card-body {
     padding: 0 10px;
     letter-spacing: 0.1em;
+}
+.card .card-title {
+    display: none;
 }
 .card .card-title, 
 .card .price,
@@ -228,12 +242,55 @@ a {
     padding-bottom: 4px;
 }
 .card {
+    width: 100%;
     padding-bottom: 10px;
 }
-
-.card .card-body .price {
+.card-img {
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    bottom: 0;
+}
+.tooltip-img-price {
+    margin-top: 8px
+}
+.test a { position: relative;display: block;text-align: center;}
+.test a:hover .tooltiip {
+    width: 100%;
+    opacity: 1;
+    transform: translateY(128%);
+}
+.test a img:hover {
+    *filter: brightness(1.75);
+}
+.tooltiip {
+    *text-align: center;
+    background-color: #f8f8f8;
+    color: #282a36;
+    position: absolute;
+    padding: 0.4em;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 200ms;
+}
+.tooltiip:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: calc(50% - 8px);
+    border-bottom: 8px solid #f8f8f8;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.card .card-body .price, .tooltip-img-price {
     font-size: 16px;
     font-weight: bold;
+}
+.card-body {
+    margin-top: 15px;
 }
 .card .card-body .prc {
     font-size: 10px;

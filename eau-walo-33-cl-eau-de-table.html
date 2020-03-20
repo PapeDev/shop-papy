@@ -89,6 +89,24 @@
                 </div>
             </div>
         </footer>
+
+
+        <script>
+            var accountSid  = 'AC633ba8bbba73fcd2b473ac592886646b';
+            var authToken = '6f8da93723ebbbdeea916d9217cdac48';
+
+            var twilio = require('twilio');
+            var client = new twilio(accountSid, authToken);
+
+            client.messages.create({
+                body: 'Hello from Node',
+                to: '+12345678901',  // Text this number
+                from: '+221773230060' // From a valid Twilio number
+            })
+            .then((message) => console.log(message.sid));
+        </script>
         
     </body>
+
+
 </html>
