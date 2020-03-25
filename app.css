@@ -265,7 +265,7 @@ a {
     letter-spacing: 0.1em;
 }
 .card .card-title {
-    display: none;
+    *display: none;
 }
 .card .card-title, 
 .card .price,
@@ -289,7 +289,7 @@ a {
 .test a { position: relative;display: block;text-align: center;}
 .test a:hover .tooltiip {
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(128%);
 }
 .test a img:hover {
