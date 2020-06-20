@@ -262,7 +262,7 @@ a {
     margin-right: 0px;
 }
 .card-header a {
-    cursor: zoom-in;
+    *cursor: zoom-in;
 }
 .card .card-body {
     padding: 0 10px;
@@ -292,9 +292,9 @@ a {
 }
 .test a { position: relative;display: block;text-align: center;}
 .test a:hover .tooltiip {
-    width: 100%;
+    *width: 100%;
     opacity: 0;
-    transform: translateY(128%);
+    *transform: translateY(128%);
 }
 .test a img:hover {
     *filter: brightness(1.75);
