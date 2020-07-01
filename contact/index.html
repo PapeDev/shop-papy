@@ -1,25 +1,116 @@
-+++
-date = "2020"
-title = "Passez votre commande"
-+++
+<!DOCTYPE html>
 
-<form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Your Name: <input type="text" name="name" /></label>   
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <label>Your Role: <select name="role[]" multiple>
-        <option value="leader">Leader</option>
-        <option value="follower">Follower</option>
-      </select></label>
-    </p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J'achéte Plus - Boutique en ligne - Acheter plus chez Buy + et Moins Cher</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../app.css">
+        <link rel="stylesheet" href="lightbox.css">
+        <script src="js/fixed.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/e44233aee6.js"></script> -->
+    </head>
+    <body>
+
+        
+
+        <nav class="ma-topbar fixed">
+            <div class="ma-topbar__container">
+                <div class="malogo">
+                    <a href="https://buy-plus.netlify.com/">J'achéte Plus</a>
+                </div>
+                <div class="ma-topbar_container__infos">
+                    Pour commander, contactez-nous par whatsapp au &nbsp;<img src="img/call.svg" width="16" height="16" alt=""> +221 77 323 00 60
+                </div>
+            </div>
+        </nav>
+       
+        <!-- <div class="topbar">
+            <header class="header container">
+                <div class="header-logo">
+                    <a href="/index.html" class="header-logo">Maristes Shop </a>
+                </div>
+                <div class="header-txt-info">
+                    <p><span><img src="img/call.svg" alt=""></span> +221 77 323 00 60</p>
+                </div>
+            </header>
+        </div> -->
+
+        <div class="container site">
+            
+
+            <div class="clear"></div>
+
+            <div class="last-article-title">
+                <h1>Passez votre commande</h1>
+                
+                <form name="contact" method="POST" data-netlify="true">
+                    <div>
+                        <div>
+                            <label for="">Nom</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">Numlero contact</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="">Whatsapp</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Adresse de livraison</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Produit</label>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <p>
+                    <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+
+
+            
+        </div>
+
+    
+
+    
+
+
+     
+
+        <footer class="footer">
+            <!-- <div class="footer-title container">maristes shop</div> -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content container">
+                    <div class="social">
+                        <h4>Retrouvez-nous sur</h4>
+                        <p>
+                            <a href=""><img src="img/facebook.svg" alt=""></a>
+                        </p>
+                    </div>
+                    <div class="contactez-nous">
+                        <h4>Contactez-nous</h4>
+                        <p>+221 77 323 00 60</p>
+                    </div>
+                    <div class="mode-paiement">
+                        <h4>Mode de paiement</h4>
+                        <p>
+                            <img src="../../images/cash.svg" width="25" height="17" alt="Paiement cash à la livraison" title="Paiement cash à la livraison">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
